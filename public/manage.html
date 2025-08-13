@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Bot - KHAN-MD</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="manage-container">
+    <header>
+      <h1>Manage Bot</h1>
+      <a href="/dashboard" class="back-btn">Back to Dashboard</a>
+    </header>
+    
+    <div class="bot-info">
+      <h2 id="botName">Loading...</h2>
+      <div class="bot-actions">
+        <button id="viewLogsBtn">View Logs</button>
+        <button id="deleteBotBtn">Delete Bot</button>
+      </div>
+    </div>
+    
+    <div class="config-section">
+      <h2>Configuration</h2>
+      <form id="configForm">
+        <!-- Config fields will be populated by JavaScript -->
+      </form>
+      <button id="saveConfigBtn">Save Changes</button>
+    </div>
+  </div>
+  
+  <script src="/js/manage.js"></script>
+</body>
+</html>
