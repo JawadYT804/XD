@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deploy KHAN-MD</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="deploy-container">
+    <div class="logo">
+      <i class="fas fa-robot"></i>
+    </div>
+    <h1>Deploy KHAN-MD Bot</h1>
+    
+    <div class="form-group">
+      <label>GitHub Username</label>
+      <input type="text" id="username" placeholder="Your GitHub username">
+    </div>
+    
+    <div class="form-group">
+      <label>SESSION_ID</label>
+      <input type="text" id="session" placeholder="IK~xxx">
+    </div>
+    
+    <div class="form-group">
+      <label>App Name (Optional)</label>
+      <input type="text" id="appname" placeholder="Leave blank for random name">
+    </div>
+    
+    <button id="deployBtn">Deploy Bot</button>
+    
+    <div id="result" class="result-message"></div>
+    
+    <div class="config-toggle">
+      <button id="toggleConfig">Show Advanced Config</button>
+    </div>
+    
+    <div id="configSection" class="config-section" style="display: none;">
+      <!-- Config items will be loaded here -->
+    </div>
+  </div>
+  
+  <script src="/js/deploy.js"></script>
+</body>
+</html>
