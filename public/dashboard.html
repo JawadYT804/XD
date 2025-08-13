@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - KHAN-MD</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <header>
+      <h1>KHAN-MD Dashboard</h1>
+      <button id="logoutBtn">Logout</button>
+    </header>
+    
+    <div class="stats">
+      <div class="stat-card">
+        <h3>Bots Deployed</h3>
+        <p id="botCount">0</p>
+      </div>
+      <div class="stat-card">
+        <h3>Remaining Slots</h3>
+        <p id="remainingSlots">3</p>
+      </div>
+    </div>
+    
+    <div class="actions">
+      <button id="newBotBtn">Deploy New Bot</button>
+    </div>
+    
+    <div class="bots-list">
+      <h2>Your Bots</h2>
+      <div id="botsContainer"></div>
+    </div>
+  </div>
+  
+  <script src="/js/dashboard.js"></script>
+</body>
+</html>
